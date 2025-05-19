@@ -11,7 +11,7 @@ media/
 staticfiles/
 .env
 
-# Migrations (you can track them if you prefer)
+# Migrations 
 **/migrations/
 !**/migrations/__init__.py
 
