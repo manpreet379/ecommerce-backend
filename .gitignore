@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+*.log
+
+# Django
+db.sqlite3
+media/
+staticfiles/
+.env
+
+# Migrations (you can track them if you prefer)
+**/migrations/
+!**/migrations/__init__.py
+
+# IDEs/editors
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Virtualenv
+venv/
+.env/
