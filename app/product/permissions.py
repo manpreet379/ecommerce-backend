@@ -1,5 +1,6 @@
 from rest_framework.permissions import BasePermission, SAFE_METHODS
 
+
 class IsAdminOrReadonly(BasePermission):
     """
     Custom permission to only allow admin users to edit objects.
