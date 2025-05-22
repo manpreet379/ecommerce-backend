@@ -48,6 +48,13 @@ class Constant:
         130: "Category list fetched successfully.",
         131: "Category created successfully.",
         132: "Category creation failed.",
+        133: "Product list fetched successfully.",
+        134: "Product created successfully.",
+        135: "Product creation failed.",
+        136: "Product fetched successfully.",
+        137: "Product updated successfully.",
+        138: "Product update failed.",
+        139: "Product deleted successfully.",
 
 
 
