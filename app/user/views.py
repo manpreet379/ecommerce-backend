@@ -24,7 +24,7 @@ class UserListCreateAPIView(APIView):
         serializer = UserSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
-            return ResponseBuilder.created(code=101, data=serializer.data)
+            return ResponseBuilder.accepted(code=101, data=serializer.data)
         return ResponseBuilder.bad_request(code=102, errors=serializer.errors)
 
 
@@ -114,7 +114,7 @@ class AddressListCreateAPIView(APIView):
         serializer = AddressSerializer(data=request.data, context={'request': request})
         if serializer.is_valid():
             serializer.save()
-            return ResponseBuilder.created(code=114, data=serializer.data)
+            return ResponseBuilder.accepted(code=114, data=serializer.data)
         return ResponseBuilder.bad_request(code=115, errors=serializer.errors)
 
 
