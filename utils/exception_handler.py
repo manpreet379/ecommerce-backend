@@ -33,6 +33,5 @@ def custom_exception_handler(exc, context):
     logger.error(f"[Unhandled] {view_name}: {str(exc)}", exc_info=True)
     return ResponseBuilder.bad_request(
         code=500,
-        message=Constant.response_messages.get(500, "Internal server error"),
         errors=str(exc)
     )
