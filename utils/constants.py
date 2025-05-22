@@ -55,6 +55,13 @@ class Constant:
         137: "Product updated successfully.",
         138: "Product update failed.",
         139: "Product deleted successfully.",
+        140: "User registered successfully. Pending admin approval.",
+        141: "User registration successfully.",
+        142: "Pending Seller fetched successfully.",
+        143: "Seller already approved.",
+        144: "Seller approved successfully.",
+        145: "Seller is already approved. Cannot reject.",
+        146: "Seller rejected successfully.",
 
 
 
