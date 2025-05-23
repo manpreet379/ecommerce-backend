@@ -62,6 +62,10 @@ class Constant:
         144: "Seller approved successfully.",
         145: "Seller is already approved. Cannot reject.",
         146: "Seller rejected successfully.",
+        147: "Seller profile fetched successfully.",
+        148: "Seller profile updated successfully.",
+        149: "Seller profile update failed.",
+        150: "Seller profile not found.",
 
 
 
