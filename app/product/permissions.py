@@ -22,7 +22,7 @@ class IsSellerOrReadonly(BasePermission):
         if request.method in SAFE_METHODS:
             return True
         # Allow write access only to authenticated users who are sellers
-        return request.user.role == 'seller' and request.user.is_authenticated
+        return request.user.role == 'seller' and request.user.is_authenticated and request.user.is_approved
     
 
 class IsProductOwner(BasePermission):

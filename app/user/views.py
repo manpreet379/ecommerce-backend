@@ -23,8 +23,10 @@ class UserListCreateAPIView(APIView):
     def post(self, request):
         serializer = UserSerializer(data=request.data)
         if serializer.is_valid():
-            serializer.save()
-            return ResponseBuilder.accepted(code=101, data=serializer.data)
+            user = serializer.save()
+            if user.role == 'seller':
+                return ResponseBuilder.accepted(code=140, data=serializer.data)
+            return ResponseBuilder.accepted(code=141, data=serializer.data)
         return ResponseBuilder.bad_request(code=102, errors=serializer.errors)
 
 
